@@ -1,0 +1,289 @@
+:root {
+  font-size: calc(5em + 20vw);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #d2e0fb;
+}
+
+.toggle {
+  position: relative;
+  width: 1em;
+  height: 0.1em;
+  border-radius: 0.5em;
+  border: 0.015em solid #9f9f9f;
+  background-image: linear-gradient(#f2f2f2, #fff, #f2f2f2);
+  margin: 0.26em 0.15em;
+  cursor: pointer;
+  filter: drop-shadow(0.015em 0.015em 0.01em rgba(0, 0, 0, 0.3));
+}
+
+.toggle-btn::after {
+  position: absolute;
+  top: -0.14rem;
+  left: 0;
+  width: 50%;
+  font-size: 0.35em;
+  text-align: center;
+  transition: all 500ms cubic-bezier(0.34, 0.78, 0.55, 1.4);
+}
+
+.toggle-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.toggle-checkbox:checked + .toggle-btn::after {
+  left: 50%;
+}
+
+/* Happy/Sad Toggle */
+
+.happy-sad .toggle-btn::after {
+  content: "😁";
+}
+
+.happy-sad .toggle-checkbox:checked + .toggle-btn::after {
+  content: "😭";
+}
+
+/* Love/Hate Toggle */
+
+.love-hate .toggle-btn::after {
+  content: "😍";
+}
+
+.love-hate .toggle-checkbox:checked + .toggle-btn::after {
+  content: "😡";
+}
+
+/* Nerd/Cool Toggle */
+
+.nerd-cool .toggle-btn::after {
+  content: "🤓";
+}
+
+.nerd-cool .toggle-checkbox:checked + .toggle-btn::after {
+  content: "😎";
+}
+
+/* Young/Old Toggle */
+
+.young-old .toggle-btn::after {
+  content: "👶";
+}
+
+.young-old .toggle-checkbox:checked + .toggle-btn::after {
+  content: "👴";
+}
+
+/* Male/Female Toggle */
+
+.male-female .toggle-btn::after {
+  content: "👨";
+}
+
+.male-female .toggle-checkbox:checked + .toggle-btn::after {
+  content: "👩";
+}
+
+/* King/Queen Toggle */
+
+.king-queen .toggle-btn::after {
+  content: "🤴";
+}
+
+.king-queen .toggle-checkbox:checked + .toggle-btn::after {
+  content: "👸";
+}
+
+/* Sun/Moon Toggle */
+
+.sun-moon .toggle-btn::after {
+  content: "🌞";
+}
+
+.sun-moon .toggle-checkbox:checked + .toggle-btn::after {
+  content: "🌚";
+}
+
+/* Fire/Water Toggle */
+
+.fire-water .toggle-btn::after {
+  content: "🔥";
+}
+
+.fire-water .toggle-checkbox:checked + .toggle-btn::after {
+  content: "💧";
+}
+
+/* Heart/Break Toggle */
+
+.heart-break .toggle-btn::after {
+  content: "💘";
+}
+
+.heart-break .toggle-checkbox:checked + .toggle-btn::after {
+  content: "💔";
+}
+
+/* Bomb/Explode Toggle */
+
+.bomb-explode .toggle-btn::after {
+  content: "💣";
+}
+
+.bomb-explode .toggle-checkbox:checked + .toggle-btn::after {
+  content: "💥";
+}
+
+/* Egg Shell/Fry Toggle */
+
+.egg-shell-fry .toggle-btn::after {
+  content: "🥚";
+}
+
+.egg-shell-fry .toggle-checkbox:checked + .toggle-btn::after {
+  content: "🍳";
+}
+
+/* Takeoff/Land Toggle */
+
+.takeoff-land .toggle-btn::after {
+  content: "🛫";
+}
+
+.takeoff-land .toggle-checkbox:checked + .toggle-btn::after {
+  content: "🛬";
+}
+
+/* Hourglass Start/End Toggle */
+
+.hourglass-start-end .toggle-btn::after {
+  content: "⏳";
+}
+
+.hourglass-start-end .toggle-checkbox:checked + .toggle-btn::after {
+  content: "⌛";
+}
+
+/* Speaker Low/High Toggle */
+
+.speaker-low-high .toggle-btn::after {
+  content: "🔉";
+}
+
+.speaker-low-high .toggle-checkbox:checked + .toggle-btn::after {
+  content: "🔊";
+}
+
+/* Lock/Unlock Toggle */
+
+.lock-unlock .toggle-btn::after {
+  content: "🔒";
+}
+
+.lock-unlock .toggle-checkbox:checked + .toggle-btn::after {
+  content: "🔓";
+}
+
+/* Chick/Chicken Toggle */
+
+.chick-chicken .toggle-btn::after {
+  content: "🐣";
+}
+
+.chick-chicken .toggle-checkbox:checked + .toggle-btn::after {
+  content: "🐓";
+}
+
+/* Cow/Milk Toggle */
+
+.cow-milk .toggle-btn::after {
+  content: "🐄";
+}
+
+.cow-milk .toggle-checkbox:checked + .toggle-btn::after {
+  content: "🥛";
+}
+
+/* Pig/Bacon Toggle */
+
+.pig-bacon .toggle-btn::after {
+  content: "🐖";
+}
+
+.pig-bacon .toggle-checkbox:checked + .toggle-btn::after {
+  content: "🥓";
+}
+
+/* Fish/Sushi Toggle */
+
+.fish-sushi .toggle-btn::after {
+  content: "🐟";
+}
+
+.fish-sushi .toggle-checkbox:checked + .toggle-btn::after {
+  content: "🍣";
+}
+
+/* Caterpillar/Butterfly Toggle */
+
+.caterpillar-butterfly .toggle-btn::after {
+  content: "🐛";
+}
+
+.caterpillar-butterfly .toggle-checkbox:checked + .toggle-btn::after {
+  content: "🦋";
+}
+
+/* Seedling/Flower Toggle */
+
+.seedling-flower .toggle-btn::after {
+  content: "🌱";
+}
+
+.seedling-flower .toggle-checkbox:checked + .toggle-btn::after {
+  content: "🌷";
+}
+
+/* Thumbs Up/Down Toggle */
+
+.thumbs-up-down .toggle-btn::after {
+  content: "👍";
+}
+
+.thumbs-up-down .toggle-checkbox:checked + .toggle-btn::after {
+  content: "👎";
+}
+
+/* Left/Right Toggle */
+
+.left-right .toggle-btn::after {
+  content: "👈";
+}
+
+.left-right .toggle-checkbox:checked + .toggle-btn::after {
+  content: "👉";
+}
+
+/* Up/Down Toggle */
+
+.up-down .toggle-btn::after {
+  content: "👆";
+}
+
+.up-down .toggle-checkbox:checked + .toggle-btn::after {
+  content: "👇";
+}
